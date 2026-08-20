@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+pydantic
+scikit-learn
+lifelines
+pandas
+numpy
+joblib

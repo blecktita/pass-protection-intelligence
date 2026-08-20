@@ -1,0 +1,20 @@
+{
+  "c_index": 0.8028,
+  "test_c_index": 0.8028,
+  "cv_c_index_mean": 0.803,
+  "cv_c_index_std": 0.0125,
+  "penalizer": 0.01,
+  "median_survival_s": 11.3,
+  "n_events": 2949,
+  "n_censored": 41454,
+  "event_rate": 0.0664,
+  "duration_proxy": "window_duration_s (snap to terminal event)",
+  "excluded_features": [
+    "separation_at_end",
+    "window_duration_s",
+    "pff_hitAllowed",
+    "pff_hurryAllowed",
+    "pff_sackAllowed"
+  ],
+  "model": "CoxPHFitter (lifelines), penalizer tuned via 5-fold GroupKFold CV"
+}

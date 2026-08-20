@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 580" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2f6fed"/>
+    </marker>
+    <marker id="arrowRed" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#d64545"/>
+    </marker>
+    <marker id="arrowGold" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#b8790f"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="900" height="580" fill="#fdfbf6"/>
+  <text x="450" y="34" text-anchor="middle" font-size="20" font-weight="600" fill="#2b2b2b">Outfield Layout</text>
+  
+
+  <!-- line of scrimmage -->
+  <line x1="40" y1="330" x2="860" y2="330" stroke="#999" stroke-width="2" stroke-dasharray="6,5"/>
+  <text x="845" y="322" text-anchor="end" font-size="12" fill="#777">line of scrimmage</text>
+
+  <!-- offensive line -->
+  <g fill="#2f6fed" stroke="#1a3f8f" stroke-width="1.5">
+    <circle cx="330" cy="350" r="20"/>
+    <circle cx="390" cy="350" r="20"/>
+    <circle cx="450" cy="350" r="20"/>
+    <circle cx="510" cy="350" r="20"/>
+    <circle cx="570" cy="350" r="20"/>
+  </g>
+  <g fill="#fff" font-size="13" font-weight="700" text-anchor="middle">
+    <text x="330" y="355">LT</text>
+    <text x="390" y="355">LG</text>
+    <text x="450" y="355">C</text>
+    <text x="510" y="355">RG</text>
+    <text x="570" y="355">RT</text>
+  </g>
+  <text x="450" y="392" text-anchor="middle" font-size="12" fill="#2f6fed" font-weight="600">offensive line ----  (PASS BLOCK)</text>
+
+  <!-- defensive line -->
+  <g fill="#d64545" stroke="#8f1f1f" stroke-width="1.5">
+    <circle cx="360" cy="290" r="20"/>
+    <circle cx="420" cy="290" r="20"/>
+    <circle cx="480" cy="290" r="20"/>
+    <circle cx="540" cy="290" r="20"/>
+  </g>
+  <g fill="#fff" font-size="13" font-weight="700" text-anchor="middle">
+    <text x="360" y="295">DE</text>
+    <text x="420" y="295">DT</text>
+    <text x="480" y="295">DT</text>
+    <text x="540" y="295">DE</text>
+  </g>
+  <text x="450" y="255" text-anchor="middle" font-size="12" fill="#d64545" font-weight="600">defensive line ----  (PASS RUSH)</text>
+
+  <!-- block vs rush arrows -->
+  <line x1="360" y1="309" x2="330" y2="331" stroke="#d64545" stroke-width="2.5" marker-end="url(#arrowRed)"/>
+  <line x1="420" y1="309" x2="405" y2="331" stroke="#d64545" stroke-width="2.5" marker-end="url(#arrowRed)"/>
+  <line x1="480" y1="309" x2="495" y2="331" stroke="#d64545" stroke-width="2.5" marker-end="url(#arrowRed)"/>
+  <line x1="540" y1="309" x2="570" y2="331" stroke="#d64545" stroke-width="2.5" marker-end="url(#arrowRed)"/>
+
+  <line x1="345" y1="332" x2="358" y2="311" stroke="#2f6fed" stroke-width="2.5" marker-end="url(#arrowBlue)"/>
+  <line x1="405" y1="332" x2="418" y2="311" stroke="#2f6fed" stroke-width="2.5" marker-end="url(#arrowBlue)"/>
+  <line x1="495" y1="332" x2="482" y2="311" stroke="#2f6fed" stroke-width="2.5" marker-end="url(#arrowBlue)"/>
+  <line x1="570" y1="332" x2="558" y2="311" stroke="#2f6fed" stroke-width="2.5" marker-end="url(#arrowBlue)"/>
+
+  <!-- QB and snap -->
+  <path d="M450,370 Q450,410 450,435" fill="none" stroke="#b8790f" stroke-width="2" stroke-dasharray="4,4" marker-end="url(#arrowGold)"/>
+  <text x="470" y="405" font-size="11" fill="#b8790f">snap</text>
+  <circle cx="450" cy="460" r="20" fill="#2f6fed" stroke="#1a3f8f" stroke-width="1.5"/>
+  <text x="450" y="465" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">QB</text>
+  <text x="450" y="500" text-anchor="middle" font-size="12" fill="#2b2b2b">QB (aka the passer) often drops back to throw</text>
+
+  <!-- one rusher "beating" a block, curving toward QB -->
+  <path d="M420,270 C 340,320 350,420 425,455" fill="none" stroke="#d64545" stroke-width="2" stroke-dasharray="3,4" marker-end="url(#arrowRed)"/>
+  
+
+  <!-- left receiver + route + coverage -->
+  <circle cx="120" cy="350" r="18" fill="#2f6fed" stroke="#1a3f8f" stroke-width="1.5"/>
+  <text x="120" y="355" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">WR</text>
+  <path d="M120,332 C 100,260 160,180 130,110" fill="none" stroke="#2f6fed" stroke-width="2" stroke-dasharray="5,4" marker-end="url(#arrowBlue)"/>
+  <text x="70" y="220" font-size="11" fill="#2f6fed" transform="rotate(-70 70 220)">PASS ROUTE</text>
+
+  <circle cx="95" cy="130" r="18" fill="#d64545" stroke="#8f1f1f" stroke-width="1.5"/>
+  <text x="95" y="135" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">CB</text>
+  <text x="95" y="100" text-anchor="middle" font-size="11" fill="#d64545">COVERAGE</text>
+
+  <!-- right receiver + route + coverage -->
+  <circle cx="780" cy="350" r="18" fill="#2f6fed" stroke="#1a3f8f" stroke-width="1.5"/>
+  <text x="780" y="355" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">WR</text>
+  <path d="M780,332 C 800,260 740,180 770,110" fill="none" stroke="#2f6fed" stroke-width="2" stroke-dasharray="5,4" marker-end="url(#arrowBlue)"/>
+  <text x="850" y="220" font-size="11" fill="#2f6fed" transform="rotate(70 850 220)">PASS ROUTE</text>
+
+  <circle cx="805" cy="130" r="18" fill="#d64545" stroke="#8f1f1f" stroke-width="1.5"/>
+  <text x="805" y="135" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">CB</text>
+  <text x="805" y="100" text-anchor="middle" font-size="11" fill="#d64545">COVERAGE</text>
+
+  <!-- safety over the top -->
+  <circle cx="450" cy="90" r="18" fill="#d64545" stroke="#8f1f1f" stroke-width="1.5"/>
+  <text x="450" y="95" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">S</text>
+  <text x="450" y="65" text-anchor="middle" font-size="11" fill="#d64545">safety — deep coverage</text>
+
+  <!-- legend -->
+  <g transform="translate(40,530)">
+    <circle cx="0" cy="0" r="9" fill="#2f6fed"/>
+    <text x="16" y="4" font-size="12" fill="#2b2b2b">Offense</text>
+    <circle cx="130" cy="0" r="9" fill="#d64545"/>
+    <text x="146" y="4" font-size="12" fill="#2b2b2b">Defense</text>
+    <text x="280" y="4" font-size="12" fill="#2b2b2b">Every player on the field is doing exactly one of: block or rush or route oe coverage or pass</text>
+  </g>
+</svg>

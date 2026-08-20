@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="pathArrowBlue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1a3f8f"/>
+    </marker>
+    <marker id="pathArrowRed" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#8f1f1f"/>
+    </marker>
+    <marker id="sepArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#555"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="800" height="460" fill="#fdfbf6"/>
+  <text x="400" y="30" text-anchor="middle" font-size="19" font-weight="600" fill="#2b2b2b">Turning two players' paths into one number: separation</text>
+  <text x="400" y="50" text-anchor="middle" font-size="13" fill="#666">One `pressure_allowed` row, plotted bird's-eye — the same shape as notebooks/01_eda.ipynb §7</text>
+
+  <rect x="60" y="80" width="680" height="330" fill="#eef6ec" stroke="#2b2b2b" stroke-width="1.5"/>
+
+  <!-- QB reference -->
+  <circle cx="150" cy="150" r="14" fill="#2f6fed" stroke="#1a3f8f" stroke-width="1.5"/>
+  <text x="150" y="155" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">QB</text>
+
+  <!-- blocker path -->
+  <path d="M250,360 C 245,300 232,250 228,215" fill="none" stroke="#1a3f8f" stroke-width="2.5" marker-end="url(#pathArrowBlue)"/>
+  <circle cx="250" cy="360" r="9" fill="#2f6fed" stroke="#1a3f8f" stroke-width="1.5"/>
+  <text x="250" y="385" text-anchor="middle" font-size="11" fill="#1a3f8f">blocker (snap)</text>
+  <circle cx="228" cy="210" r="9" fill="#2f6fed" stroke="#1a3f8f" stroke-width="1.5"/>
+  <text x="228" y="198" text-anchor="middle" font-size="11" fill="#1a3f8f">blocker (end)</text>
+
+  <!-- rusher path -->
+  <path d="M640,360 C 520,300 340,250 262,220" fill="none" stroke="#8f1f1f" stroke-width="2.5" marker-end="url(#pathArrowRed)"/>
+  <circle cx="640" cy="360" r="9" fill="#d64545" stroke="#8f1f1f" stroke-width="1.5"/>
+  <text x="640" y="385" text-anchor="middle" font-size="11" fill="#8f1f1f">rusher (snap)</text>
+  <circle cx="262" cy="220" r="9" fill="#d64545" stroke="#8f1f1f" stroke-width="1.5"/>
+  <text x="262" y="245" text-anchor="middle" font-size="11" fill="#8f1f1f">rusher (end)</text>
+  <text x="470" y="290" font-size="11" fill="#8f1f1f" font-style="italic">rusher_speed_max ≈ 8 yd/s</text>
+
+  <!-- separation at snap -->
+  <line x1="250" y1="360" x2="640" y2="360" stroke="#555" stroke-width="1.5" marker-start="url(#sepArrow)" marker-end="url(#sepArrow)"/>
+  <text x="445" y="352" text-anchor="middle" font-size="12" fill="#333" font-weight="600">separation_at_snap ≈ 1.1 yd (drawn wide for clarity)</text>
+
+  <!-- separation min -->
+  <line x1="228" y1="210" x2="262" y2="220" stroke="#555" stroke-width="1.5" marker-start="url(#sepArrow)" marker-end="url(#sepArrow)"/>
+  <text x="330" y="185" font-size="12" fill="#333" font-weight="600">separation_min ≈ 0.3 yd — the block is beaten</text>
+
+  <text x="400" y="440" text-anchor="middle" font-size="12" fill="#666">closing_velocity = (separation_at_snap − separation_at_end) / window_duration_s</text>
+</svg>

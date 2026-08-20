@@ -1,0 +1,14 @@
+feature,importance
+rusher_speed_mean,0.6751875655183136
+closing_velocity,0.4106768506833552
+separation_min,0.38765671166447985
+blocker_speed_max,0.3274279900366506
+window_duration_s,0.31045752047823855
+pff_blockType,0.21307378065153254
+rusher_speed_max,0.15714138710076564
+blocker_speed_mean,0.11528151833107673
+rusher_accel_mean,0.10705509379045966
+blocker_accel_mean,0.06658874823937555
+pff_positionLinedUp,0.05183876801200406
+separation_at_snap,0.038945242051849634
+pff_backFieldBlock,0.0009807884463312589

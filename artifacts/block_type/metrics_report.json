@@ -1,0 +1,45 @@
+{
+  "macro_f1": 0.2933,
+  "lr_macro_f1": 0.2178,
+  "baseline_f1": 0.094,
+  "cv_score_mean": 0.2847,
+  "cv_score_std": 0.0106,
+  "cv_scoring": "f1_macro",
+  "best_params": {
+    "learning_rate": 0.04703241617286455,
+    "max_depth": 6,
+    "max_leaf_nodes": 43,
+    "min_samples_leaf": 27
+  },
+  "n_train": 36430,
+  "n_test": 9321,
+  "n_classes": 11,
+  "class_names": [
+    "BH",
+    "CL",
+    "NB",
+    "OTHER",
+    "PA",
+    "PP",
+    "PR",
+    "PT",
+    "PU",
+    "SW",
+    "UP"
+  ],
+  "rare_threshold": 150,
+  "per_class_f1": {
+    "BH": 0.4314,
+    "CL": 0.1671,
+    "NB": 0.1112,
+    "OTHER": 0.0449,
+    "PA": 0.4048,
+    "PP": 0.4986,
+    "PR": 0.359,
+    "PT": 0.2539,
+    "PU": 0.6592,
+    "SW": 0.2161,
+    "UP": 0.0798
+  },
+  "finding": "Macro-F1=0.293 \u2014 some signal in motion, most technique is pre-snap"
+}

@@ -1,0 +1,104 @@
+@page {
+  size: A4;
+  margin: 22mm 18mm;
+}
+
+/* Every doc already opens with its own top-level heading — suppress pandoc's
+   synthetic title block so it doesn't duplicate it. The <title> tag (and so
+   the PDF's own metadata title) is unaffected by this. */
+#title-block-header {
+  display: none;
+}
+
+body {
+  font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 10.5pt;
+  line-height: 1.55;
+  color: #1f2328;
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 650;
+  color: #14202e;
+  break-after: avoid;
+  break-inside: avoid;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+h1 { font-size: 20pt; border-bottom: 2px solid #1B3A6B; padding-bottom: 0.25em; margin-top: 0; }
+h2 { font-size: 15pt; border-bottom: 1px solid #d8dee4; padding-bottom: 0.2em; }
+h3 { font-size: 12.5pt; color: #1B3A6B; }
+h4, h5, h6 { font-size: 11pt; }
+
+p, ul, ol, table, blockquote { break-inside: avoid-page; }
+li { margin: 0.15em 0; }
+
+a { color: #1B3A6B; text-decoration: none; }
+a:visited { color: #1B3A6B; }
+
+code {
+  font-family: "SF Mono", Menlo, Consolas, monospace;
+  font-size: 9pt;
+  background: #f2f4f7;
+  padding: 0.12em 0.35em;
+  border-radius: 3px;
+}
+
+pre {
+  background: #f6f8fa;
+  border: 1px solid #d8dee4;
+  border-radius: 5px;
+  padding: 0.8em 1em;
+  overflow-x: auto;
+  break-inside: avoid-page;
+}
+pre code {
+  background: none;
+  padding: 0;
+  font-size: 8.7pt;
+  line-height: 1.45;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1em 0;
+  font-size: 9.5pt;
+}
+th, td {
+  border: 1px solid #d8dee4;
+  padding: 0.4em 0.6em;
+  text-align: left;
+  vertical-align: top;
+}
+th {
+  background: #eef1f5;
+  font-weight: 650;
+}
+tr:nth-child(even) td { background: #fafbfc; }
+
+blockquote {
+  margin: 1em 0;
+  padding: 0.4em 1em;
+  border-left: 3px solid #1B3A6B;
+  color: #444;
+  background: #f8f9fb;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1em auto;
+}
+
+div[align="center"] {
+  text-align: center;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #d8dee4;
+  margin: 1.5em 0;
+}

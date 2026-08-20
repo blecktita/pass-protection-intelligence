@@ -1,0 +1,21 @@
+{
+  "pr_auc": 0.5089,
+  "roc_auc": 0.8731,
+  "lr_pr_auc": 0.3902,
+  "baseline_pr_auc": 0.1177,
+  "cv_score_mean": 0.468,
+  "cv_score_std": 0.0189,
+  "cv_scoring": "average_precision",
+  "best_params": {
+    "learning_rate": 0.04703241617286455,
+    "max_depth": 6,
+    "max_leaf_nodes": 43,
+    "min_samples_leaf": 27
+  },
+  "best_threshold": 0.5,
+  "best_f1": 0.4679,
+  "n_train": 28852,
+  "n_test": 7411,
+  "positive_rate": 0.1171,
+  "key_design_note": "nearest_dist_min replaces named opponent \u2014 handles double-teams"
+}

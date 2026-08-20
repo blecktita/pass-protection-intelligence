@@ -1,0 +1,31 @@
+{
+  "macro_f1": 0.7881,
+  "lr_macro_f1": 0.6608,
+  "baseline_f1": 0.1966,
+  "cv_score_mean": 0.7767,
+  "cv_score_std": 0.0057,
+  "cv_scoring": "f1_macro",
+  "best_params": {
+    "learning_rate": 0.04703241617286455,
+    "max_depth": 6,
+    "max_leaf_nodes": 43,
+    "min_samples_leaf": 27
+  },
+  "n_train": 149380,
+  "n_test": 38346,
+  "n_classes": 5,
+  "class_names": [
+    "Coverage",
+    "Pass",
+    "Pass Block",
+    "Pass Route",
+    "Pass Rush"
+  ],
+  "per_class_f1": {
+    "Coverage": 0.8179,
+    "Pass": 0.6291,
+    "Pass Block": 0.8403,
+    "Pass Route": 0.8335,
+    "Pass Rush": 0.8198
+  }
+}

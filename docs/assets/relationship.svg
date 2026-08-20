@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="joinArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#b8790f"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="900" height="420" fill="#fdfbf6"/>
+  <text x="450" y="30" text-anchor="middle" font-size="19" font-weight="600" fill="#2b2b2b">How the two data sources join</text>
+
+  <!-- left table: pffScoutingData -->
+  <text x="200" y="70" text-anchor="middle" font-size="13" font-weight="700" fill="#1a3f8f">pffScoutingData.csv</text>
+  <text x="200" y="88" text-anchor="middle" font-size="11" fill="#666">one row per (game, play, player)</text>
+
+  <g transform="translate(40,100)">
+    <rect x="0" y="0" width="320" height="30" fill="#e7eefd" stroke="#1a3f8f"/>
+    <text x="45" y="20" text-anchor="middle" font-size="10" font-weight="700" fill="#1a3f8f">gameId</text>
+    <text x="120" y="20" text-anchor="middle" font-size="10" font-weight="700" fill="#1a3f8f">playId</text>
+    <text x="190" y="20" text-anchor="middle" font-size="10" font-weight="700" fill="#1a3f8f">nflId</text>
+    <text x="270" y="20" text-anchor="middle" font-size="10" font-weight="700" fill="#1a3f8f">pff_role</text>
+
+    <rect x="0" y="30" width="320" height="26" fill="#fff" stroke="#ccc"/>
+    <text x="45" y="48" text-anchor="middle" font-size="10">2021090900</text>
+    <text x="120" y="48" text-anchor="middle" font-size="10">97</text>
+    <text x="190" y="48" text-anchor="middle" font-size="10">44875</text>
+    <text x="270" y="48" text-anchor="middle" font-size="10">Pass Block</text>
+
+    <rect x="0" y="56" width="320" height="26" fill="#fbfbfb" stroke="#ccc"/>
+    <text x="45" y="74" text-anchor="middle" font-size="10">2021090900</text>
+    <text x="120" y="74" text-anchor="middle" font-size="10">97</text>
+    <text x="190" y="74" text-anchor="middle" font-size="10">52505</text>
+    <text x="270" y="74" text-anchor="middle" font-size="10">Pass Rush</text>
+
+    <rect x="0" y="82" width="320" height="26" fill="#fff" stroke="#ccc"/>
+    <text x="160" y="100" text-anchor="middle" font-size="10" fill="#999">… 188,254 rows total</text>
+  </g>
+
+  <!-- right table: tracking -->
+  <text x="700" y="70" text-anchor="middle" font-size="13" font-weight="700" fill="#8f1f1f">tracking_parquets/week*.parquet</text>
+  <text x="700" y="88" text-anchor="middle" font-size="11" fill="#666">one row per (game, play, player, frame)</text>
+
+  <g transform="translate(540,100)">
+    <rect x="0" y="0" width="320" height="30" fill="#fdeceb" stroke="#8f1f1f"/>
+    <text x="35" y="20" text-anchor="middle" font-size="9" font-weight="700" fill="#8f1f1f">gameId</text>
+    <text x="90" y="20" text-anchor="middle" font-size="9" font-weight="700" fill="#8f1f1f">playId</text>
+    <text x="140" y="20" text-anchor="middle" font-size="9" font-weight="700" fill="#8f1f1f">nflId</text>
+    <text x="190" y="20" text-anchor="middle" font-size="9" font-weight="700" fill="#8f1f1f">frameId</text>
+    <text x="245" y="20" text-anchor="middle" font-size="9" font-weight="700" fill="#8f1f1f">x</text>
+    <text x="280" y="20" text-anchor="middle" font-size="9" font-weight="700" fill="#8f1f1f">y</text>
+
+    <rect x="0" y="30" width="320" height="22" fill="#fff" stroke="#ccc"/>
+    <text x="35" y="45" text-anchor="middle" font-size="9">2021090900</text>
+    <text x="90" y="45" text-anchor="middle" font-size="9">97</text>
+    <text x="140" y="45" text-anchor="middle" font-size="9">44875</text>
+    <text x="190" y="45" text-anchor="middle" font-size="9">1</text>
+    <text x="245" y="45" text-anchor="middle" font-size="9">61.2</text>
+    <text x="280" y="45" text-anchor="middle" font-size="9">24.0</text>
+
+    <rect x="0" y="52" width="320" height="22" fill="#fbfbfb" stroke="#ccc"/>
+    <text x="35" y="67" text-anchor="middle" font-size="9">2021090900</text>
+    <text x="90" y="67" text-anchor="middle" font-size="9">97</text>
+    <text x="140" y="67" text-anchor="middle" font-size="9">44875</text>
+    <text x="190" y="67" text-anchor="middle" font-size="9">2</text>
+    <text x="245" y="67" text-anchor="middle" font-size="9">61.1</text>
+    <text x="280" y="67" text-anchor="middle" font-size="9">24.0</text>
+
+    <rect x="0" y="74" width="320" height="22" fill="#fff" stroke="#ccc"/>
+    <text x="35" y="89" text-anchor="middle" font-size="9">2021090900</text>
+    <text x="90" y="89" text-anchor="middle" font-size="9">97</text>
+    <text x="140" y="89" text-anchor="middle" font-size="9">44875</text>
+    <text x="190" y="89" text-anchor="middle" font-size="9">3</text>
+    <text x="245" y="89" text-anchor="middle" font-size="9">60.9</text>
+    <text x="280" y="89" text-anchor="middle" font-size="9">24.1</text>
+
+    <rect x="0" y="96" width="320" height="22" fill="#fbfbfb" stroke="#ccc"/>
+    <text x="160" y="111" text-anchor="middle" font-size="9" fill="#999">… same player, next frame, ~0.1s later …</text>
+  </g>
+
+  <!-- join arrow -->
+  <line x1="365" y1="150" x2="535" y2="150" stroke="#b8790f" stroke-width="2.5" marker-end="url(#joinArrow)"/>
+  <text x="450" y="140" text-anchor="middle" font-size="12" font-weight="600" fill="#b8790f">joined on</text>
+  <text x="450" y="168" text-anchor="middle" font-size="11" fill="#b8790f">(gameId, playId, nflId)</text>
+
+  <!-- cardinality note -->
+  <rect x="180" y="240" width="540" height="70" rx="8" fill="#fde9c8" stroke="#b8790f" stroke-width="1.5"/>
+  <text x="450" y="266" text-anchor="middle" font-size="13" font-weight="700" fill="#8a5a0a">1 PFF row  ↔  ~30-80 tracking rows</text>
+  <text x="450" y="286" text-anchor="middle" font-size="11" fill="#8a5a0a">one per player-frame during that player's snap-to-event window</text>
+  
+
+  <text x="450" y="345" text-anchor="middle" font-size="12" fill="#666">playId is only unique within a gameId so always join on the pair</text>
+</svg>

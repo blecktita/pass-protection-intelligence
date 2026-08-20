@@ -1,0 +1,21 @@
+{
+  "pr_auc": 0.2945,
+  "roc_auc": 0.8499,
+  "lr_pr_auc": 0.2005,
+  "baseline_pr_auc": 0.067,
+  "cv_score_mean": 0.3207,
+  "cv_score_std": 0.0129,
+  "cv_scoring": "average_precision",
+  "best_params": {
+    "learning_rate": 0.02755086958186593,
+    "max_depth": 6,
+    "max_leaf_nodes": 50,
+    "min_samples_leaf": 49
+  },
+  "best_threshold": 0.5,
+  "best_f1": 0.3201,
+  "n_train": 35362,
+  "n_test": 9041,
+  "positive_rate": 0.0668,
+  "imbalance_ratio": 14.06
+}

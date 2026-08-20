@@ -1,0 +1,12 @@
+feature,importance
+rusher_displacement,1.063219239355351
+nearest_closing_vel,0.6076566193232087
+rusher_speed_mean,0.31023570840679465
+nearest_dist_min,0.29229519693811057
+rusher_speed_max,0.2384407688914478
+window_duration_s,0.10503611754695967
+rusher_orient_std,0.06994377618121024
+nearest_dist_mean,0.06303230992702191
+rusher_accel_mean,0.0588497067150266
+pff_positionLinedUp,0.05222176150922011
+rusher_accel_max,0.045831679019132994

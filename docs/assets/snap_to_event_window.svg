@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="tArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2b2b2b"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="900" height="300" fill="#fdfbf6"/>
+  <text x="450" y="32" text-anchor="middle" font-size="19" font-weight="600" fill="#2b2b2b">One play = ~30-80 tracking frames; only a slice gets used</text>
+  <text x="450" y="52" text-anchor="middle" font-size="13" fill="#666">Frames are 0.1s apart (10 per second) — example play, frames 1-40</text>
+
+  <!-- greyed-out pre/post regions -->
+  <rect x="60" y="120" width="234" height="60" fill="#e8e8e4"/>
+  <rect x="723" y="120" width="117" height="60" fill="#e8e8e4"/>
+  <!-- window -->
+  <rect x="294" y="120" width="429" height="60" fill="#fde9c8" stroke="#b8790f" stroke-width="1.5"/>
+
+  <!-- timeline -->
+  <line x1="60" y1="150" x2="850" y2="150" stroke="#2b2b2b" stroke-width="1.5" marker-end="url(#tArrow)"/>
+  <text x="855" y="155" font-size="13" fill="#2b2b2b">frameId</text>
+
+  <!-- ticks -->
+  <g stroke="#999" stroke-width="1" font-size="10" fill="#777">
+    <line x1="60" y1="145" x2="60" y2="155"/><text x="60" y="200" text-anchor="middle">1</text>
+    <line x1="294" y1="145" x2="294" y2="155"/>
+    <line x1="450" y1="145" x2="450" y2="155"/><text x="450" y="200" text-anchor="middle">20</text>
+    <line x1="723" y1="145" x2="723" y2="155"/>
+    <line x1="840" y1="145" x2="840" y2="155"/><text x="840" y="200" text-anchor="middle">40</text>
+  </g>
+
+  <!-- snap flag -->
+  <line x1="294" y1="120" x2="294" y2="90" stroke="#b8790f" stroke-width="2"/>
+  <circle cx="294" cy="88" r="4" fill="#b8790f"/>
+  <text x="294" y="72" text-anchor="middle" font-size="12" font-weight="700" fill="#b8790f">ball_snap</text>
+  <text x="294" y="215" text-anchor="middle" font-size="11" fill="#b8790f">frame 12</text>
+
+  <!-- end flag -->
+  <line x1="723" y1="120" x2="723" y2="90" stroke="#b8790f" stroke-width="2"/>
+  <circle cx="723" cy="88" r="4" fill="#b8790f"/>
+  <text x="723" y="72" text-anchor="middle" font-size="12" font-weight="700" fill="#b8790f">pass_forward</text>
+  <text x="723" y="215" text-anchor="middle" font-size="11" fill="#b8790f">frame 34</text>
+
+  <!-- window bracket -->
+  <text x="508" y="243" text-anchor="middle" font-size="13" font-weight="600" fill="#8a5a0a">the window used to build features (2.2s of engagement)</text>
+
+  <text x="177" y="243" text-anchor="middle" font-size="11" fill="#999">not used</text>
+  <text x="781" y="243" text-anchor="middle" font-size="11" fill="#999">not used</text>
+
+  <text x="450" y="278" text-anchor="middle" font-size="12" fill="#666">If no recognized ending event fires (e.g. a scramble), the window falls back to the play's last tracked frame.</text>
+</svg>
